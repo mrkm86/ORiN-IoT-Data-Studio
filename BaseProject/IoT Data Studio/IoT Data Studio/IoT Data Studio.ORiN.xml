@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Object="True">
+  <INode Object="True" Type="clsCaoSQLWorkspace" Name="Engine">
+    <Expanded>True</Expanded>
+    <Key VT="8">Engine</Key>
+    <Selected>True</Selected>
+    <clsCaoSQLWorkspace Object="True" Property="Tag">
+      <m_strCaoHost VT="8">localhost</m_strCaoHost>
+      <m_lRetryCnt>-1</m_lRetryCnt>
+      <m_lRetryInterval>3000</m_lRetryInterval>
+      <m_strHistoryADOCon VT="8" />
+      <m_strTableName VT="8" />
+      <m_lMaxRecord>0</m_lMaxRecord>
+      <m_strHistoryADOCon2nd VT="8" />
+      <m_strTableName2nd VT="8" />
+      <m_lMaxRecord2nd>0</m_lMaxRecord2nd>
+      <m_lTableType>0</m_lTableType>
+      <m_bEnableHistory>False</m_bEnableHistory>
+      <m_bAutoSwitch>False</m_bAutoSwitch>
+      <m_bSysInfo>False</m_bSysInfo>
+      <m_bNoConvToBstr>False</m_bNoConvToBstr>
+      <m_strDefCtrlName VT="8" />
+      <m_strDeviceType VT="8">urn:schemas-upnp-org:device:Basic:1</m_strDeviceType>
+      <m_strFriendlyName VT="8">ORiN Device</m_strFriendlyName>
+      <m_strManufacturer VT="8">ORiN Consortium</m_strManufacturer>
+      <m_strManufacturerURL VT="8">http://www.orin.jp/</m_strManufacturerURL>
+      <m_strModelDescription VT="8">CAO-UPnP Device</m_strModelDescription>
+      <m_strModelName VT="8">CaoUPnP</m_strModelName>
+      <m_strModelNumber VT="8">CUPP-1</m_strModelNumber>
+      <m_strModelURL VT="8">http://www.orin.jp/</m_strModelURL>
+      <m_strSerialNumber VT="8">0001</m_strSerialNumber>
+      <m_strUDN VT="8">uuid:</m_strUDN>
+      <m_strUPC VT="8">00000001</m_strUPC>
+      <m_strPresentationURL VT="8" />
+      <ClassAttribute>0</ClassAttribute>
+      <ReplacementStringList />
+      <DBConnectionStringList />
+      <m_bDBConnRetry>True</m_bDBConnRetry>
+      <m_lDBConnRetryCount>3</m_lDBConnRetryCount>
+      <m_lDBConnRetryInterval>1000</m_lDBConnRetryInterval>
+      <m_bExecuteStartupTrigger>False</m_bExecuteStartupTrigger>
+      <m_bDisposeErrorScripts>True</m_bDisposeErrorScripts>
+      <PluginConfig>
+        <Data>
+          <Key>HTTPRequest</Key>
+        </Data>
+      </PluginConfig>
+      <m_bBackupDisabled>False</m_bBackupDisabled>
+      <m_lMaxBackupCount>604800</m_lMaxBackupCount>
+      <m_bAutoRecovery>False</m_bAutoRecovery>
+      <m_lAutoRecoveryInterval>60</m_lAutoRecoveryInterval>
+    </clsCaoSQLWorkspace>
+    <Text VT="8">Engine</Text>
+    <Visible>True</Visible>
+    <BackColor>2147483653</BackColor>
+    <Checked>False</Checked>
+    <ForeColor>2147483656</ForeColor>
+    <INode Object="True" Type="clsCaoSQLController" Name="【SK】LogData">
+      <Expanded>False</Expanded>
+      <Key VT="8">Engine\【SK】LogData</Key>
+      <Selected>False</Selected>
+      <clsCaoSQLController Object="True" Property="Tag">
+        <m_strProvider VT="8">CaoProv.DataQueue</m_strProvider>
+        <m_strMachine VT="8" />
+        <m_strCtrlName VT="8">LogData</m_strCtrlName>
+        <m_strParam VT="8" />
+        <m_lSamplingRate>300</m_lSamplingRate>
+        <m_bDistribute>False</m_bDistribute>
+        <m_bDescription>True</m_bDescription>
+        <m_strDescription VT="8" />
+        <m_bEnabled>True</m_bEnabled>
+        <m_lImageIndex>1</m_lImageIndex>
+        <m_bStartup>True</m_bStartup>
+        <m_bUseHistory>True</m_bUseHistory>
+        <m_lPriority>3</m_lPriority>
+        <m_lType>0</m_lType>
+        <m_lTimeStamp>2</m_lTimeStamp>
+        <m_bWriteToCache>False</m_bWriteToCache>
+        <m_bVariableSync>False</m_bVariableSync>
+        <m_bWDT>False</m_bWDT>
+        <m_lWDTCount>3</m_lWDTCount>
+        <m_bWDTDS>False</m_bWDTDS>
+        <m_lWDTTime>300</m_lWDTTime>
+        <m_lWDTAction>0</m_lWDTAction>
+        <m_bUseTrigger>False</m_bUseTrigger>
+        <m_bTriggerDisable>False</m_bTriggerDisable>
+        <m_bCalcDisable>False</m_bCalcDisable>
+        <Collection Object="True" Property="m_mapTrigger">
+          <clsCaoSQLTriggerItem Object="True" Index="1">
+            <m_strName />
+            <clsCaoSQLTriggerInfo Object="True" Index="1">
+              <m_lAction>0</m_lAction>
+              <m_strExeFile VT="8" />
+              <m_strExeParams VT="8" />
+              <m_lCondition>-1</m_lCondition>
+              <m_strThreshold VT="8" />
+            </clsCaoSQLTriggerInfo>
+            <clsCaoSQLTriggerInfo Object="True" Index="2">
+              <m_lAction>0</m_lAction>
+              <m_strExeFile VT="8" />
+              <m_strExeParams VT="8" />
+              <m_lCondition>-1</m_lCondition>
+              <m_strThreshold VT="8" />
+            </clsCaoSQLTriggerInfo>
+            <NewEnum />
+            <Count>2</Count>
+          </clsCaoSQLTriggerItem>
+        </Collection>
+        <TriggerEx>
+          <m_bEnabled>True</m_bEnabled>
+          <m_lId>0</m_lId>
+          <Evaluation>
+            <m_bEnabled>True</m_bEnabled>
+            <m_strName VT="8">[value]@QCount</m_strName>
+            <m_lCondition>3</m_lCondition>
+            <m_strThreshold VT="8">0</m_strThreshold>
+            <m_bPrevValue>0</m_bPrevValue>
+            <m_lConjunction>0</m_lConjunction>
+            <Description VT="8">Queueデータチェック</Description>
+            <m_lId>1</m_lId>
+            <Action>
+              <m_lId>2</m_lId>
+              <m_bEnabled>True</m_bEnabled>
+              <m_lAction>6</m_lAction>
+              <m_strPutItem VT="8">[LogData]ArrayLogData</m_strPutItem>
+              <m_strPutValue VT="8">[value]@QPop</m_strPutValue>
+              <m_lPutType>29</m_lPutType>
+              <Description VT="8">【Action】Queue取り出し</Description>
+              <clsCaoSQLUserDefineBDInfo />
+              <m_strId VT="8">I8X4UWVDCFAU27W0O141VXNP52</m_strId>
+              <ExecuteParam />
+              <CalculationList />
+              <PluginConfig />
+            </Action>
+            <Action>
+              <m_lId>3</m_lId>
+              <m_bEnabled>True</m_bEnabled>
+              <m_lAction>9</m_lAction>
+              <m_strPutItem VT="8">[LogData]ArrayLogData</m_strPutItem>
+              <Description VT="8">【Action】ArrayLogData更新</Description>
+              <clsCaoSQLUserDefineBDInfo />
+              <m_strId VT="8">PDQBX46N19XN3WLRFAAEY6NNQ2</m_strId>
+              <ExecuteParam />
+              <CalculationList />
+              <m_strExtension VT="8">1</m_strExtension>
+              <PluginConfig />
+            </Action>
+            <Action>
+              <m_lId>4</m_lId>
+              <m_bEnabled>True</m_bEnabled>
+              <m_lAction>5</m_lAction>
+              <m_lCallback>1</m_lCallback>
+              <Description VT="8">【Action】テキストファイルへ出力</Description>
+              <clsCaoSQLUserDefineBDInfo />
+              <m_strId VT="8">NJO0USWADCQ02GAF1VRV3U7WT2</m_strId>
+              <ExecuteParam />
+              <CalculationList />
+              <PluginFullName>CSVPlugin.CSVOutput</PluginFullName>
+              <PluginConfig>
+                <Data>
+                  <Key>_TriggerActionFullName</Key>
+                  <Value>CSVOutputAction.CSVOutput</Value>
+                </Data>
+                <Data>
+                  <Key>__Controller</Key>
+                  <Value>【SK】LogData</Value>
+                </Data>
+                <Data>
+                  <Key>Folder</Key>
+                  <Value>C:\IoT STARTER\Log\{SYSDATE:yyyyMMdd}</Value>
+                </Data>
+                <Data>
+                  <Key>FileName</Key>
+                  <Value>{SYSDATE:yyyyMMdd_HH}.txt</Value>
+                </Data>
+                <Data>
+                  <Key>WriteMode</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>_Async</Key>
+                  <Value>1</Value>
+                </Data>
+                <Data>
+                  <Key>MaxLinesOn</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>MaxLines</Key>
+                  <Value>100</Value>
+                </Data>
+                <Data>
+                  <Key>MaxSizeOn</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>MaxSize</Key>
+                  <Value>100</Value>
+                </Data>
+                <Data>
+                  <Key>SizeUnit</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>StopWritingOn</Key>
+                  <Value>1</Value>
+                </Data>
+                <Data>
+                  <Key>Encoding</Key>
+                  <Value>utf-8*</Value>
+                </Data>
+                <Data>
+                  <Key>OutputHeader</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>Separator</Key>
+                  <Value>1</Value>
+                </Data>
+                <Data>
+                  <Key>LineFeed</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>Quote</Key>
+                  <Value>2</Value>
+                </Data>
+                <Data>
+                  <Key>EndWithLineFeed</Key>
+                  <Value>1</Value>
+                </Data>
+                <Data>
+                  <Key>WriteFileName</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>PrevFolderName</Key>
+                  <Value />
+                </Data>
+                <Data>
+                  <Key>PrevFileName</Key>
+                  <Value />
+                </Data>
+                <Data>
+                  <Key>CurrentFolderItem</Key>
+                  <Value />
+                </Data>
+                <Data>
+                  <Key>CurrentFileItem</Key>
+                  <Value />
+                </Data>
+                <Data>
+                  <Key>CloseEachWrite</Key>
+                  <Value>0</Value>
+                </Data>
+                <Data>
+                  <Key>Data</Key>
+                  <Data>
+                    <Key>Header</Key>
+                    <Value>T_TIME</Value>
+                  </Data>
+                  <Data>
+                    <Key>Item</Key>
+                    <Value>\[LogData]T_TIME</Value>
+                  </Data>
+                  <Data>
+                    <Key>Property</Key>
+                    <Value>Value</Value>
+                  </Data>
+                  <Data>
+                    <Key>Format</Key>
+                    <Value>yyyy/MM/dd HH:mm:ss</Value>
+                  </Data>
+                </Data>
+                <Data>
+                  <Key>Data</Key>
+                  <Data>
+                    <Key>Header</Key>
+                    <Value>T_NAME</Value>
+                  </Data>
+                  <Data>
+                    <Key>Item</Key>
+                    <Value>\[LogData]T_NAME</Value>
+                  </Data>
+                  <Data>
+                    <Key>Property</Key>
+                    <Value>Value</Value>
+                  </Data>
+                </Data>
+                <Data>
+                  <Key>Data</Key>
+                  <Data>
+                    <Key>Header</Key>
+                    <Value>T_LOGDATA</Value>
+                  </Data>
+                  <Data>
+                    <Key>Item</Key>
+                    <Value>\[LogData]T_LOGDATA</Value>
+                  </Data>
+                  <Data>
+                    <Key>Property</Key>
+                    <Value>Value</Value>
+                  </Data>
+                </Data>
+              </PluginConfig>
+            </Action>
+            <Else />
+          </Evaluation>
+        </TriggerEx>
+        <m_bAutoReconn>True</m_bAutoReconn>
+        <m_lRecCount>10</m_lRecCount>
+        <m_lRecInterval>2</m_lRecInterval>
+        <m_bScript>False</m_bScript>
+        <m_strScript VT="8" />
+        <m_bNotSafeMode>False</m_bNotSafeMode>
+        <ClassAttribute>1</ClassAttribute>
+        <RSQLCtrlName VT="8">【SK】LogData</RSQLCtrlName>
+        <m_bEventBinding>False</m_bEventBinding>
+        <m_bOutputActionLog>False</m_bOutputActionLog>
+        <IsRemoteController>false</IsRemoteController>
+        <m_lRecWaitTime>5</m_lRecWaitTime>
+        <m_lRecType>0</m_lRecType>
+        <IsSystemController>false</IsSystemController>
+        <IsVirtualController>false</IsVirtualController>
+      </clsCaoSQLController>
+      <Text VT="8">【SK】LogData</Text>
+      <BackColor>2147483653</BackColor>
+      <Checked>False</Checked>
+      <ForeColor>2147483656</ForeColor>
+      <INode Object="True" Type="clsCaoSQLGroup" Name="value">
+        <Expanded>False</Expanded>
+        <Key VT="8">Engine\【SK】LogData\value</Key>
+        <Selected>False</Selected>
+        <clsCaoSQLGroup Object="True" Property="Tag" />
+        <Text VT="8">value</Text>
+        <BackColor>2147483653</BackColor>
+        <Checked>False</Checked>
+        <ForeColor>2147483656</ForeColor>
+        <INode Object="True" Type="clsCaoSQLItem" Name="@QCount">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\value\@QCount</Key>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8">@QCount</m_strVarName>
+            <m_lSystemType>3</m_lSystemType>
+            <m_strSysObjName VT="8">ExtQueue</m_strSysObjName>
+            <m_strSysObjOption VT="8">QSize=500,QMode=1</m_strSysObjOption>
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>True</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[value]@QCount</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\value\@QCount</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">@QCount</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+        <INode Object="True" Type="clsCaoSQLItem" Name="@QPush">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\value\@QPush</Key>
+          <Previous>@QCount</Previous>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8">@QPush</m_strVarName>
+            <m_lSystemType>3</m_lSystemType>
+            <m_strSysObjName VT="8">ExtQueue</m_strSysObjName>
+            <m_strSysObjOption VT="8">QSize=500,QMode=1</m_strSysObjOption>
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>2</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>True</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[value]@QPush</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\value\@QPush</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">@QPush</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+        <INode Object="True" Type="clsCaoSQLItem" Name="@QPop">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\value\@QPop</Key>
+          <Previous>@QPush</Previous>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8">@QPop</m_strVarName>
+            <m_lSystemType VT="8">3</m_lSystemType>
+            <m_strSysObjName VT="8">ExtQueue</m_strSysObjName>
+            <m_strSysObjOption VT="8">QSize=500,QMode=1</m_strSysObjOption>
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>True</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[value]@QPop</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\value\@QPop</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">@QPop</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+      </INode>
+      <INode Object="True" Type="clsCaoSQLGroup" Name="LogData">
+        <Expanded>False</Expanded>
+        <Key VT="8">Engine\【SK】LogData\LogData</Key>
+        <Previous>value</Previous>
+        <Selected>False</Selected>
+        <clsCaoSQLGroup Object="True" Property="Tag" />
+        <Text VT="8">LogData</Text>
+        <BackColor>2147483653</BackColor>
+        <Checked>False</Checked>
+        <ForeColor>2147483656</ForeColor>
+        <INode Object="True" Type="clsCaoSQLItem" Name="ArrayLogData">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\LogData\ArrayLogData</Key>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8" />
+            <m_lSystemType>0</m_lSystemType>
+            <m_strSysObjName VT="8" />
+            <m_strSysObjOption VT="8" />
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>27</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>2</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>False</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>True</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[LogData]ArrayLogData</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\LogData\ArrayLogData</FullName>
+            <LinkItem VT="8">[LogData]T_TIME,[LogData]T_NAME,[LogData]T_LOGDATA</LinkItem>
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">ArrayLogData</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+        <INode Object="True" Type="clsCaoSQLItem" Name="T_TIME">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\LogData\T_TIME</Key>
+          <Previous>ArrayLogData</Previous>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8" />
+            <m_lSystemType>0</m_lSystemType>
+            <m_strSysObjName VT="8" />
+            <m_strSysObjOption VT="8" />
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>False</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[LogData]T_TIME</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\LogData\T_TIME</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">T_TIME</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+        <INode Object="True" Type="clsCaoSQLItem" Name="T_NAME">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\LogData\T_NAME</Key>
+          <Previous>T_TIME</Previous>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8" />
+            <m_lSystemType>0</m_lSystemType>
+            <m_strSysObjName VT="8" />
+            <m_strSysObjOption VT="8" />
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>False</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[LogData]T_NAME</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\LogData\T_NAME</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">T_NAME</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+        <INode Object="True" Type="clsCaoSQLItem" Name="T_LOGDATA">
+          <Expanded>False</Expanded>
+          <Key VT="8">Engine\【SK】LogData\LogData\T_LOGDATA</Key>
+          <Previous>T_NAME</Previous>
+          <Selected>False</Selected>
+          <clsCaoSQLItem Object="True" Property="Tag">
+            <m_strVarName VT="8" />
+            <m_lSystemType>0</m_lSystemType>
+            <m_strSysObjName VT="8" />
+            <m_strSysObjOption VT="8" />
+            <m_bDescription>True</m_bDescription>
+            <m_strDescription VT="8" />
+            <m_bUseHistory>True</m_bUseHistory>
+            <m_bUseEmpty>False</m_bUseEmpty>
+            <m_bEnabled>True</m_bEnabled>
+            <m_lImageIndex>2</m_lImageIndex>
+            <m_bOnChangeEvent>True</m_bOnChangeEvent>
+            <m_lType>0</m_lType>
+            <m_bDeactivate>False</m_bDeactivate>
+            <m_bDeadBand>False</m_bDeadBand>
+            <m_fDeadBandMin>0</m_fDeadBandMin>
+            <m_fDeadBandMax>0</m_fDeadBandMax>
+            <m_bMinMax>False</m_bMinMax>
+            <m_fMin>0</m_fMin>
+            <m_fMax>0</m_fMax>
+            <m_bChatEnabled>False</m_bChatEnabled>
+            <m_lChatMax>0</m_lChatMax>
+            <m_strDefaultValue VT="8" />
+            <m_lAttribute>0</m_lAttribute>
+            <m_lForceChange>0</m_lForceChange>
+            <m_bVariableEnabled>False</m_bVariableEnabled>
+            <m_bInitialize>False</m_bInitialize>
+            <m_strInitData VT="8" />
+            <m_lInitDataType>3</m_lInitDataType>
+            <m_strOption VT="8" />
+            <m_lDataType>0</m_lDataType>
+            <m_bMaskEnabled>False</m_bMaskEnabled>
+            <m_lMask>0</m_lMask>
+            <m_bBCD>False</m_bBCD>
+            <m_lCalcIndex>0</m_lCalcIndex>
+            <m_lCalcIndex2>0</m_lCalcIndex2>
+            <m_str2ndItem VT="8" />
+            <m_str3rdItem VT="8" />
+            <m_bChangeType>False</m_bChangeType>
+            <m_lRequestType>12</m_lRequestType>
+            <m_bChangeTypeW>False</m_bChangeTypeW>
+            <m_lRequestTypeW>12</m_lRequestTypeW>
+            <m_bCompArrays>True</m_bCompArrays>
+            <m_bExtrLink>False</m_bExtrLink>
+            <m_lLinkProp>0</m_lLinkProp>
+            <m_strItemName VT="8">[LogData]T_LOGDATA</m_strItemName>
+            <m_strCtrlName VT="8">【SK】LogData</m_strCtrlName>
+            <ClassAttribute>2</ClassAttribute>
+            <FullName VT="8">Engine\【SK】LogData\LogData\T_LOGDATA</FullName>
+            <LinkItem VT="8" />
+            <IsGroupMember>True</IsGroupMember>
+            <m_bDirectReading>False</m_bDirectReading>
+            <m_lDirectReadingSuppressedTime />
+            <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
+            <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
+            <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+            <m_bSubItem>False</m_bSubItem>
+            <CalculationList>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+              <Calculation>
+                <m_lCalcIndex>0</m_lCalcIndex>
+              </Calculation>
+            </CalculationList>
+          </clsCaoSQLItem>
+          <Text VT="8">T_LOGDATA</Text>
+          <BackColor>2147483653</BackColor>
+          <Checked>False</Checked>
+          <ForeColor>2147483656</ForeColor>
+        </INode>
+      </INode>
+    </INode>
+  </INode>
+  <Version>1.3</Version>
+</INodes>

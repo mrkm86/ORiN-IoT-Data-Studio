@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectName>IoT Data Studio</ProjectName>
+  <ProjectDir>IoT Data Studio</ProjectDir>
+  <ProjectData>
+    <Data>
+      <Key>ORiNPlugin</Key>
+      <Data>
+        <Key>File</Key>
+        <Value>IoT Data Studio.ORiN.xml</Value>
+      </Data>
+    </Data>
+    <Data>
+      <Key>CaoOPCDAPlugin</Key>
+      <Data>
+        <Key>File</Key>
+        <Value>IoT Data Studio.OPC.xml</Value>
+      </Data>
+      <Data>
+        <Key>Enabled</Key>
+        <Value>False</Value>
+      </Data>
+    </Data>
+    <Data>
+      <Key>CaoOPCUAPlugin</Key>
+      <Data>
+        <Key>File</Key>
+        <Value>IoT Data Studio.OPCUA.xml</Value>
+      </Data>
+      <Data>
+        <Key>Enabled</Key>
+        <Value>False</Value>
+      </Data>
+    </Data>
+  </ProjectData>
+  <PluginData>
+    <Data>
+      <Key>HTTPRequest</Key>
+    </Data>
+  </PluginData>
+</Project>
