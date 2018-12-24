@@ -8,11 +8,11 @@
     <m_strMachine VT="8" />
     <m_strCtrlName VT="8">USBCamera</m_strCtrlName>
     <m_strParam VT="8">FrameRate=15:15:0:0:0:0:0:0:0:0 </m_strParam>
-    <m_lSamplingRate>60000</m_lSamplingRate>
+    <m_lSamplingRate>10000</m_lSamplingRate>
     <m_bDistribute>False</m_bDistribute>
     <m_bDescription>True</m_bDescription>
     <m_strDescription VT="8" />
-    <m_bEnabled>False</m_bEnabled>
+    <m_bEnabled>True</m_bEnabled>
     <m_lImageIndex>1</m_lImageIndex>
     <m_bStartup>True</m_bStartup>
     <m_bUseHistory>True</m_bUseHistory>
@@ -368,6 +368,32 @@ End Sub</m_strScript>
         <Action>
           <m_lId>11</m_lId>
           <m_bEnabled>False</m_bEnabled>
+          <m_lAction>4</m_lAction>
+          <m_strExeFile VT="8">c:\ORiN2\CAO\Tools\CaoScript\Bin\CaoScript.exe</m_strExeFile>
+          <m_strExeParams VT="8">C:\Users\murak\Desktop\desktop\bmp2base64.vbs Main start</m_strExeParams>
+          <Description VT="8">【Action】CAMERA1_base64処理開始</Description>
+          <clsCaoSQLUserDefineBDInfo />
+          <m_strId VT="8">LZS2P3XC1PP80OPVJ8V914NTS2</m_strId>
+          <ExecuteParam />
+          <CalculationList />
+          <PluginConfig />
+        </Action>
+        <Action>
+          <m_lId>12</m_lId>
+          <m_bEnabled>False</m_bEnabled>
+          <m_lAction>4</m_lAction>
+          <m_strExeFile VT="8">C:\Users\murak\Desktop\desktop\killCaoScprit.bat</m_strExeFile>
+          <m_strExeParams VT="8">/F</m_strExeParams>
+          <Description VT="8">【Action】CAMERA1_base64処理終了</Description>
+          <clsCaoSQLUserDefineBDInfo />
+          <m_strId VT="8">VHG31QPTIM4K3SS394AVFYOQ72</m_strId>
+          <ExecuteParam />
+          <CalculationList />
+          <PluginConfig />
+        </Action>
+        <Action>
+          <m_lId>13</m_lId>
+          <m_bEnabled>True</m_bEnabled>
           <m_lAction>5</m_lAction>
           <m_lCallback>3</m_lCallback>
           <Description VT="8">【Action】CAMERA1画像http連携</Description>
@@ -383,7 +409,7 @@ End Sub</m_strScript>
             </Data>
             <Data>
               <Key>Url</Key>
-              <Value>https://XXXXXXXX?T_DEVICE_ID=LINE001</Value>
+              <Value>https://XXX-XXXXX?T_DEVICE_ID=LINE001</Value>
             </Data>
             <Data>
               <Key>Method</Key>
@@ -411,7 +437,7 @@ End Sub</m_strScript>
             </Data>
             <Data>
               <Key>ReturnDataType</Key>
-              <Value>String</Value>
+              <Value>0</Value>
             </Data>
             <Data>
               <Key>_TriggerActionFullName</Key>
@@ -425,7 +451,22 @@ End Sub</m_strScript>
               </Data>
               <Data>
                 <Key>Value</Key>
-                <Value>image/jpeg</Value>
+                <Value>image/bmp</Value>
+              </Data>
+            </Data>
+            <Data>
+              <Key>IsBinaryBodyType</Key>
+              <Value>True</Value>
+            </Data>
+            <Data>
+              <Key>BodyBinaryItem</Key>
+              <Data>
+                <Key>Controller</Key>
+                <Value />
+              </Data>
+              <Data>
+                <Key>Item</Key>
+                <Value>[value]@CAMERA_1</Value>
               </Data>
             </Data>
             <Data>
@@ -436,13 +477,13 @@ End Sub</m_strScript>
               </Data>
               <Data>
                 <Key>Item</Key>
-                <Value>@CAMERA_1</Value>
+                <Value>[value]T_BASE64_1</Value>
               </Data>
             </Data>
           </PluginConfig>
         </Action>
         <Action>
-          <m_lId>12</m_lId>
+          <m_lId>14</m_lId>
           <m_bEnabled>False</m_bEnabled>
           <m_lAction>5</m_lAction>
           <m_lCallback>4</m_lCallback>
@@ -459,7 +500,7 @@ End Sub</m_strScript>
             </Data>
             <Data>
               <Key>Url</Key>
-              <Value>https://XXXXXXXX?T_DEVICE_ID=LINE002</Value>
+              <Value>https://XXX-XXXXX?T_DEVICE_ID=LINE002</Value>
             </Data>
             <Data>
               <Key>Method</Key>
@@ -487,7 +528,7 @@ End Sub</m_strScript>
             </Data>
             <Data>
               <Key>ReturnDataType</Key>
-              <Value>String</Value>
+              <Value>0</Value>
             </Data>
             <Data>
               <Key>_TriggerActionFullName</Key>
@@ -505,20 +546,24 @@ End Sub</m_strScript>
               </Data>
             </Data>
             <Data>
-              <Key>ContentArgs</Key>
+              <Key>IsBinaryBodyType</Key>
+              <Value>True</Value>
+            </Data>
+            <Data>
+              <Key>BodyBinaryItem</Key>
               <Data>
                 <Key>Controller</Key>
                 <Value />
               </Data>
               <Data>
                 <Key>Item</Key>
-                <Value>@CAMERA_1</Value>
+                <Value>[value]@CAMERA_2</Value>
               </Data>
             </Data>
           </PluginConfig>
         </Action>
         <Action>
-          <m_lId>13</m_lId>
+          <m_lId>15</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -533,7 +578,7 @@ End Sub</m_strScript>
           <PluginConfig />
         </Action>
         <Action>
-          <m_lId>14</m_lId>
+          <m_lId>16</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】DATA - 画像http連携</Description>
@@ -549,7 +594,7 @@ End Sub</m_strScript>
           <PluginConfig />
         </Action>
         <Action>
-          <m_lId>15</m_lId>
+          <m_lId>17</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
@@ -564,7 +609,7 @@ End Sub</m_strScript>
           <PluginConfig />
         </Action>
         <Action>
-          <m_lId>16</m_lId>
+          <m_lId>18</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -579,7 +624,7 @@ End Sub</m_strScript>
           <PluginConfig />
         </Action>
         <Action>
-          <m_lId>17</m_lId>
+          <m_lId>19</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】DATA - 処理終了</Description>
@@ -595,7 +640,7 @@ End Sub</m_strScript>
           <PluginConfig />
         </Action>
         <Action>
-          <m_lId>18</m_lId>
+          <m_lId>20</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
