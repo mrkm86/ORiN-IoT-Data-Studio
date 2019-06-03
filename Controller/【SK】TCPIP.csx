@@ -2,13 +2,16 @@
 <INode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Object="True" Type="clsCaoSQLController" Name="【SK】TCPIP">
   <Expanded>True</Expanded>
   <Key VT="8">【SK】TCPIP</Key>
-  <Selected>False</Selected>
+  <Selected>True</Selected>
+  <TargetVersion>V_01_06_0000_0000</TargetVersion>
   <clsCaoSQLController Object="True" Property="Tag">
     <m_strProvider VT="8">CaoProv.DNWA.STREAM</m_strProvider>
     <m_strMachine VT="8" />
-    <m_strCtrlName VT="8">TCPIP</m_strCtrlName>
-    <m_strParam VT="8">conn=eth:127.0.0.1:65000, EtherOpt=1:5</m_strParam>
+    <m_strCtrlName VT="8">TCPIP_KLS</m_strCtrlName>
+    <m_strParam VT="8">conn=eth:127.0.0.1:5006, EtherOpt=1:5</m_strParam>
     <m_lSamplingRate>300</m_lSamplingRate>
+    <m_bSlowSamplingEnable>False</m_bSlowSamplingEnable>
+    <m_lSlowSamplingRate>3000</m_lSlowSamplingRate>
     <m_bDistribute>False</m_bDistribute>
     <m_bDescription>True</m_bDescription>
     <m_strDescription VT="8" />
@@ -65,42 +68,16 @@
         <Action>
           <m_lId>2</m_lId>
           <m_bEnabled>True</m_bEnabled>
-          <m_lAction>5</m_lAction>
-          <m_lCallback>1</m_lCallback>
-          <Description VT="8">新しいアクション</Description>
-          <clsCaoSQLUserDefineBDInfo />
-          <m_strId VT="8">E6MSLJDZ3AYH0L1P6ZCDDPMBR2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginFullName>DebugPrintPlugin.DebugPrint</PluginFullName>
-          <PluginConfig>
-            <Data>
-              <Key>_TriggerActionFullName</Key>
-              <Value>DebugPrintAction.DebugPrint</Value>
-            </Data>
-            <Data>
-              <Key>__Controller</Key>
-              <Value>【SK】TCPIP</Value>
-            </Data>
-          </PluginConfig>
-        </Action>
-        <Action>
-          <m_lId>3</m_lId>
-          <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】コントローラ名取得</Description>
           <m_strScript VT="8">Sub Main()
 	MyCtrl("[LogData]T_NAME").Value = "TCPIP"
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">QUF09UNZRM9U30F7E7C69NWN32</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>4</m_lId>
+          <m_lId>3</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -108,14 +85,10 @@ End Sub</m_strScript>
 	MyCtrl("[LogData]T_TIME").Value = Now()
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">FFMFVGJGXO7V189322XY97WWJ2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>5</m_lId>
+          <m_lId>4</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】DATA - 処理開始</Description>
@@ -124,14 +97,10 @@ Sub Main()
 	MyCtrl("[LogData]T_LOGDATA").Value = "処理開始"
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">6K707VNAIBY71LONXJQ5J5U4M2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>6</m_lId>
+          <m_lId>5</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
@@ -139,14 +108,10 @@ End Sub</m_strScript>
           <m_strPutValue VT="8">[LogData]ArrayLogData</m_strPutValue>
           <m_lPutType>29</m_lPutType>
           <Description VT="8">【LogData】END - ログデータスレッドに登録</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">FLKS3OSIFB0931BK9XYDLT4ZZ1</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>7</m_lId>
+          <m_lId>6</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>8</m_lAction>
           <m_lCallback />
@@ -154,15 +119,10 @@ End Sub</m_strScript>
           <m_strPutValue VT="8">Value</m_strPutValue>
           <Description VT="8">【Action】TCPIPデータ受信</Description>
           <m_strScript />
-          <m_bNotSafeMode />
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">PBU7WNODWOBX1OVRNFIQX5AIM2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>8</m_lId>
+          <m_lId>7</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -170,28 +130,20 @@ End Sub</m_strScript>
 	MyCtrl("[LogData]T_TIME").Value = Now()
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">P4Q4TQ8VTGG61BNJX64MYOVTT2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>9</m_lId>
+          <m_lId>8</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutItem VT="8">[LogData]T_LOGDATA</m_strPutItem>
           <m_strPutValue VT="8">[value]T_DATA</m_strPutValue>
           <m_lPutType>29</m_lPutType>
           <Description VT="8">【LogData】DATA - TCPIPデータ取得</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">9HQ13IUKW7FI1KHLUG0DJJUP22</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>10</m_lId>
+          <m_lId>9</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
@@ -199,14 +151,10 @@ End Sub</m_strScript>
           <m_strPutValue VT="8">[LogData]ArrayLogData</m_strPutValue>
           <m_lPutType>29</m_lPutType>
           <Description VT="8">【LogData】END - ログデータスレッドに登録</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">D3PTY0YT0HIC2G5TXSTFDDOHI2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>11</m_lId>
+          <m_lId>10</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -214,14 +162,10 @@ End Sub</m_strScript>
 	MyCtrl("[LogData]T_TIME").Value = Now()
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">2KV2INMWOR4D1E7O64MJCND702</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>12</m_lId>
+          <m_lId>11</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】DATA - 処理終了</Description>
@@ -230,22 +174,15 @@ Sub Main()
 	MyCtrl("[LogData]T_LOGDATA").Value = "テキストファイルへ出力"
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">L8X85O6EETPC1J0GF6G3ZO7QN2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>13</m_lId>
+          <m_lId>12</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>5</m_lAction>
-          <m_lCallback>2</m_lCallback>
+          <m_lCallback>1</m_lCallback>
           <Description VT="8">【Action】テキストファイルへ出力</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">HATGVGXVVI6S0IYE0KF47X3RJ2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
           <PluginFullName>CSVPlugin.CSVOutput</PluginFullName>
           <PluginConfig>
             <Data>
@@ -342,7 +279,19 @@ End Sub</m_strScript>
             </Data>
             <Data>
               <Key>CloseEachWrite</Key>
-              <Value>0</Value>
+              <Value>1</Value>
+            </Data>
+            <Data>
+              <Key>__ActionName</Key>
+              <Value>【Action】テキストファイルへ出力</Value>
+            </Data>
+            <Data>
+              <Key>__Id</Key>
+              <Value>HATGVGXVVI6S0IYE0KF47X3RJ2</Value>
+            </Data>
+            <Data>
+              <Key>__TraceId</Key>
+              <Value>13</Value>
             </Data>
             <Data>
               <Key>Data</Key>
@@ -362,7 +311,7 @@ End Sub</m_strScript>
           </PluginConfig>
         </Action>
         <Action>
-          <m_lId>14</m_lId>
+          <m_lId>13</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
@@ -370,14 +319,10 @@ End Sub</m_strScript>
           <m_strPutValue VT="8">[LogData]ArrayLogData</m_strPutValue>
           <m_lPutType>29</m_lPutType>
           <Description VT="8">【LogData】END - ログデータスレッドに登録</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">WNJ3V2840OBS2JCWDZ1S8K42L2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>15</m_lId>
+          <m_lId>14</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】START - 処理日付取得</Description>
@@ -385,14 +330,10 @@ End Sub</m_strScript>
 	MyCtrl("[LogData]T_TIME").Value = Now()
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">MDI9WWA45YDQ1DMESYSR1UCJA2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>16</m_lId>
+          <m_lId>15</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>7</m_lAction>
           <Description VT="8">【LogData】DATA - 処理終了</Description>
@@ -401,14 +342,10 @@ Sub Main()
 	MyCtrl("[LogData]T_LOGDATA").Value = "処理終了"
 End Sub</m_strScript>
           <m_bNotSafeMode>0</m_bNotSafeMode>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">E9JRO4LSNWOH0BT2OUI7DL3GB2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Action>
-          <m_lId>17</m_lId>
+          <m_lId>16</m_lId>
           <m_bEnabled>True</m_bEnabled>
           <m_lAction>6</m_lAction>
           <m_strPutController VT="8">【SK】LogData</m_strPutController>
@@ -416,11 +353,7 @@ End Sub</m_strScript>
           <m_strPutValue VT="8">[LogData]ArrayLogData</m_strPutValue>
           <m_lPutType>29</m_lPutType>
           <Description VT="8">【LogData】END - ログデータスレッドに登録</Description>
-          <clsCaoSQLUserDefineBDInfo />
           <m_strId VT="8">YXCVPM2H0SAG2DI1CFLWL0ARH2</m_strId>
-          <ExecuteParam />
-          <CalculationList />
-          <PluginConfig />
         </Action>
         <Else />
       </Evaluation>
@@ -446,7 +379,7 @@ End Sub</m_strScript>
   <Checked>False</Checked>
   <ForeColor>2147483656</ForeColor>
   <INode Object="True" Type="clsCaoSQLGroup" Name="value">
-    <Expanded>True</Expanded>
+    <Expanded>False</Expanded>
     <Key VT="8">【SK】TCPIP\value</Key>
     <Selected>False</Selected>
     <clsCaoSQLGroup Object="True" Property="Tag" />
@@ -457,7 +390,7 @@ End Sub</m_strScript>
     <INode Object="True" Type="clsCaoSQLItem" Name="T_DATA">
       <Expanded>False</Expanded>
       <Key VT="8">【SK】TCPIP\value\T_DATA</Key>
-      <Selected>True</Selected>
+      <Selected>False</Selected>
       <clsCaoSQLItem Object="True" Property="Tag">
         <m_strVarName VT="8">T_DATA</m_strVarName>
         <m_lSystemType>0</m_lSystemType>
@@ -514,6 +447,7 @@ End Sub</m_strScript>
         <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
         <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
         <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+        <IsRemoteItem>False</IsRemoteItem>
         <m_bSubItem>False</m_bSubItem>
         <CalculationList>
           <Calculation>
@@ -600,6 +534,7 @@ End Sub</m_strScript>
         <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
         <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
         <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+        <IsRemoteItem>False</IsRemoteItem>
         <m_bSubItem>False</m_bSubItem>
         <CalculationList>
           <Calculation>
@@ -676,6 +611,7 @@ End Sub</m_strScript>
         <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
         <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
         <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+        <IsRemoteItem>False</IsRemoteItem>
         <m_bSubItem />
         <CalculationList>
           <Calculation>
@@ -752,6 +688,7 @@ End Sub</m_strScript>
         <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
         <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
         <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+        <IsRemoteItem>False</IsRemoteItem>
         <m_bSubItem>False</m_bSubItem>
         <CalculationList>
           <Calculation>
@@ -828,6 +765,7 @@ End Sub</m_strScript>
         <m_bNotRecJudgeItem>False</m_bNotRecJudgeItem>
         <m_bUseFileObjDelimiter>False</m_bUseFileObjDelimiter>
         <m_strFileObjDelimiter VT="8">\</m_strFileObjDelimiter>
+        <IsRemoteItem>False</IsRemoteItem>
         <m_bSubItem />
         <CalculationList>
           <Calculation>
