@@ -7,7 +7,7 @@
   <clsCaoSQLController Object="True" Property="Tag">
     <m_strProvider VT="8">CaoProv.DNWA.STREAM</m_strProvider>
     <m_strMachine VT="8" />
-    <m_strCtrlName VT="8">TCPIP_KLS</m_strCtrlName>
+    <m_strCtrlName VT="8">TCPIP</m_strCtrlName>
     <m_strParam VT="8">conn=eth:127.0.0.1:5006, EtherOpt=1:5</m_strParam>
     <m_lSamplingRate>300</m_lSamplingRate>
     <m_bSlowSamplingEnable>False</m_bSlowSamplingEnable>
